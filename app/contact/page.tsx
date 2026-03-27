@@ -1,4 +1,5 @@
 import AnimatedSection from "@/components/animated-section";
+import ContactForm from "@/components/contact-form";
 import { Mail, MessageCircle } from "lucide-react";
 
 export default function ContactPage() {
@@ -24,59 +25,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <form className="space-y-4">
-            <div>
-              <label
-                htmlFor="name"
-                className="mb-1 block text-sm font-medium text-slate-700 dark:text-slate-200"
-              >
-                Name
-              </label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Your name"
-                className="w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-slate-900 outline-none transition-colors focus:border-indigo-500 dark:border-slate-700 dark:bg-slate-900 dark:text-white"
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="email"
-                className="mb-1 block text-sm font-medium text-slate-700 dark:text-slate-200"
-              >
-                Email
-              </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="you@company.com"
-                className="w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-slate-900 outline-none transition-colors focus:border-indigo-500 dark:border-slate-700 dark:bg-slate-900 dark:text-white"
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="message"
-                className="mb-1 block text-sm font-medium text-slate-700 dark:text-slate-200"
-              >
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Tell me about your project..."
-                rows={6}
-                className="w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-slate-900 outline-none transition-colors focus:border-indigo-500 dark:border-slate-700 dark:bg-slate-900 dark:text-white"
-              />
-            </div>
-            <button
-              type="submit"
-              className="inline-flex rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-slate-700 dark:bg-indigo-500 dark:hover:bg-indigo-400"
-            >
-              Send Message
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </AnimatedSection>
     </div>
