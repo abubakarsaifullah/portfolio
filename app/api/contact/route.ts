@@ -1,4 +1,3 @@
-export const runtime = "nodejs";
 import nodemailer from "nodemailer";
 
 type ContactPayload = {
